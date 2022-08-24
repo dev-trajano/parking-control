@@ -1,8 +1,5 @@
 package com.api.parkingcontrol.controllers;
 
-<<<<<<< HEAD
-public class ParkingSpotController {
-=======
 import com.api.parkingcontrol.dtos.ParkingSpotDto;
 import com.api.parkingcontrol.models.ParkingSpotModel;
 import com.api.parkingcontrol.services.ParkingSpotService;
@@ -33,5 +30,5 @@ public class ParkingSpotController {
     parkingSpotModel.setRegistrationDate(LocalDateTime.now(ZoneId.of("UTC")));
     return  ResponseEntity.status(HttpStatus.CREATED).body(parkingSpotService.save(parkingSpotModel));
   }
->>>>>>> 9dc21e2 (ParkingSpotService)
+
 }
